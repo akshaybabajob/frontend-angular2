@@ -1,0 +1,140 @@
+div, h1, h2, h3, h4, h5, h6, p, span, a{font-family: 'Noto Sans', sans-serif !important;}
+
+footer {
+    background: #e7eded;
+    padding-top: 20px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    .Footer-List {
+        font-size: 0;
+        * {
+            font-size: 14px;
+        }
+        ul {
+            width: 25%;
+        }
+    }
+
+
+    ul {
+        display: inline-block;
+        margin: 0 0 30px 0;
+        padding: 0;
+        list-style-type: none;
+        vertical-align: top;
+        lh {
+            text-transform: uppercase;
+            color: #7f7d70;
+            margin: 0 0px 10px 0px;
+            font-size: 14px;
+            font-family: 'Noto Sans', Helvetica, Arial, sans-serif !important;
+            display: block;
+        }
+        li {
+            display: block;
+            font-size: 14px;
+            a {
+                color: #5977b5;
+                display: inline-block;
+                font-family: "source-serif-pro",Arial, Helvetica, sans-serif;
+                padding: 2px 0;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                    color: #3c556a;
+                }
+            }
+        }
+    }
+    .Footer-Icon-Block {
+        width: 50%;
+        display: inline-block;
+        h5 {
+            color: #e27a3f;
+            font-size: 18px;
+            margin: 0;
+            padding:0;
+            font-weight: 600;
+        }
+        p{color:#7f7d70;}
+        a {
+            color: #e27a3f;
+            text-decoration: underline;
+        }
+        .nounderline{
+        color:#5977B5;
+        text-decoration:none;
+        }
+        .Footer-Tel {
+            color: #41413b;
+        }
+        .Footer-Logo {
+            height: 40px;
+            display: block;
+        }
+        .Social-Icon {
+            a {
+                margin: 5px 5px 5px 0px;
+                display: inline-block;
+                cursor: pointer;
+                .Svg-Icon {
+                    width: 30px;
+                    height: 30px;
+                    display: inline-block;
+                    border-radius: 50%;
+                    svg {
+                        fill: #fff;
+                        width: 30px;
+                        height: 30px;
+                        padding: 8px;
+                    }
+                }
+            }
+            .facebook {
+                background: #0e1f56;
+            }
+            .twitter {
+                background: #00aced;
+            }
+            .linkedin {
+                background: #007bb5;
+            }
+            .youtube {
+                background: #e52d27;
+            }
+        }
+    }
+    .Footer-Partner-List {
+        ul {
+            display: block;
+        }
+        li {
+            display: inline-block;
+            margin: 0px 20px 5px 0px;
+            vertical-align: top;
+        }
+    }
+    @media screen and (max-width: 700px){
+        ul{
+            display: none;
+        }
+        .Footer-Icon-Block{
+            width: 100%;
+            text-align: center;
+        }
+        .Footer-Logo{
+            margin: auto;
+        }
+        .Footer-Tel{
+            color: #5977b5;
+        }
+        .Footer-Partner-List{
+            display: none;
+        }
+    }
+
+    .fcolor{
+    font-size:10px;
+    text-align: center;
+    }
+}

@@ -1,0 +1,170 @@
+
+*{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/* ==========================================================================
+   Global Style For the basic html component
+   ========================================================================== */
+.gtmIframe{
+  display: none;
+  visibility: hidden;
+}
+
+body{
+	background: #f0f0f2;
+	color: #41413b;
+	font-family: 'Noto Sans', Helvetica, Arial, sans-serif !important;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+a{
+  color: #5977b5;
+  &:hover{
+    text-decoration: underline;
+    color: #3c556a;
+  }
+}
+button[disabled=disabled], button:disabled {
+  background: #dedede !important;
+  color: #b1b1b1 !important;
+}
+a,input,button{
+  outline: none;
+}
+
+.button{
+	@mixin button{};
+	display: block;
+	width: 120px;
+	height: 40px;
+	text-decoration:	none;
+	font-family: $primary-font;
+	@mixin btn{};
+	&:hover{
+		text-decoration:	none;
+		color:#fff;
+		cursor: pointer;
+	}
+}
+
+	.aside{
+		margin: 10px 0px;
+	}
+
+/* ==========================================================================
+   Global Style for formating the containers
+   ========================================================================== */
+.Wrapper{
+	width: 100%;
+	display: block;
+}
+
+.Container{
+	display: block;
+	margin: auto;
+	max-width: 1366px;
+  padding: 0px 30px;
+  position: relative;
+  @media (max-width : 600px){
+    padding: 0px 10px;
+  }
+  &-white{
+    background: #fff;
+  }
+}
+.C-Hide{
+    display: none !important;
+}
+.errorBox{
+  background: none !important;
+  padding: 3px 00px !important;
+  font-size: 16px;
+  color: $red-default-color;
+  line-height: 25px;
+}
+
+/* ==========================================================================
+   Font Family
+   ========================================================================== */
+@font-face {
+  font-family: "fira-sans";
+  // src: url("../public/font/fira-sans/WEB/FiraSans-Regular.eot?#iefix") format("embedded-opentype");
+  src: url("../public/font/fira-sans/WEB/FiraSans-Regular.eot?#iefix") format("embedded-opentype"), url("../public/font/fira-sans/WEB/FiraSans-Regular.woff") format("woff"), url("../../public/font/fira-sans/WEB/FiraSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "fira-sans";
+  // src: url("../public/font/fira-sans/WEB/FiraSans-Light.eot?#iefix") format("embedded-opentype");
+  src: url("../public/font/fira-sans/WEB/FiraSans-Light.eot?#iefix") format("embedded-opentype"), url("../public/font/fira-sans/WEB/FiraSans-Light.woff") format("woff"), url("../../public/font/fira-sans/WEB/FiraSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: "fira-sans";
+  // src: url("../public/font/fira-sans/WEB/FiraSans-Medium.eot?#iefix") format("embedded-opentype");
+  src: url("../public/font/fira-sans/WEB/FiraSans-Medium.eot?#iefix") format("embedded-opentype"), url("../public/font/fira-sans/WEB/FiraSans-Medium.woff") format("woff"), url("../../public/font/fira-sans/WEB/FiraSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "source-serif-pro";
+  // src: url("../public/font/source-serif-pro/EOT/SourceSerifPro-Semibold.eot?#iefix") format("embedded-opentype");
+  src: url("../public/font/source-serif-pro/EOT/SourceSerifPro-Semibold.eot?#iefix") format("embedded-opentype"), url("../public/font/source-serif-pro/WOFF/OTF/SourceSerifPro-Semibold.otf.woff") format("woff"), url("../../public/font/source-serif-pro/TTF/SourceSerifPro-Semibold.ttf") format("truetype"), url("../../public/font/source-serif-pro/SVG/SourceSerifPro-Semibold.svg#source-serif-pro") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "source-serif-pro";
+  // src: url("../public/font/source-serif-pro/EOT/SourceSerifPro-Regular.eot?#iefix") format("embedded-opentype") ;
+  src: url("../public/font/source-serif-pro/EOT/SourceSerifPro-Regular.eot?#iefix") format("embedded-opentype"), url("../public/font/source-serif-pro/WOFF/OTF/SourceSerifPro-Regular.otf.woff") format("woff"), url("../../public/font/source-serif-pro/TTF/SourceSerifPro-Regular.ttf") format("truetype"), url("../../public/font/source-serif-pro/SVG/SourceSerifPro-Regular.svg#source-serif-pro") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+
+
+/* ==========================================================================
+   Gloabl Style for the Formeting
+   ========================================================================== */
+.Pull-Right{
+	float: right;
+}
+.Pull-Left{
+	float: left;
+}
+.loadingText{
+
+  img{
+    margin: auto;
+    display: block;
+    text-align: center;
+    height: 100%;
+  }
+  p{
+    font-size: 18px;
+    text-align: center;
+    display: block;
+  }
+}
+
+
+::-webkit-input-placeholder {
+   color: #b1b1b1;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #b1b1b1;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #b1b1b1;
+}
+
+:-ms-input-placeholder {
+   color: #b1b1b1;
+}
+
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{
+		-webkit-appearance: none;
+		margin: 0;
+}
